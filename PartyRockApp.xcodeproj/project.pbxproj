@@ -58,8 +58,6 @@
 				127355E31E1CDFD700958835 /* View */,
 				127355E21E1CDFCF00958835 /* Model */,
 				127355D01E1CDF5000958835 /* AppDelegate.swift */,
-				127355D21E1CDF5000958835 /* MainVC.swift */,
-				127355D41E1CDF5000958835 /* Main.storyboard */,
 				127355D71E1CDF5000958835 /* Assets.xcassets */,
 				127355D91E1CDF5000958835 /* LaunchScreen.storyboard */,
 				127355DC1E1CDF5000958835 /* Info.plist */,
@@ -77,6 +75,7 @@
 		127355E31E1CDFD700958835 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				127355D41E1CDF5000958835 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -84,6 +83,7 @@
 		127355E41E1CDFE900958835 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				127355D21E1CDF5000958835 /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
