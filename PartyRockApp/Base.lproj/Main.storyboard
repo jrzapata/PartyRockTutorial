@@ -20,11 +20,103 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Savage Banner" translatesAutoresizingMaskIntoConstraints="NO" id="Ebc-DB-eqo">
+                                <rect key="frame" x="0.0" y="-10" width="375" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="21q-45-FNo"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLX-Xx-Gcq">
+                                <rect key="frame" x="0.0" y="161" width="375" height="35"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="35B-bk-ocL">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiy-U1-Tav">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Videos">
+                                                    <color key="titleColor" red="1" green="0.12105407899999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU5-Fa-Nsx">
+                                                <rect key="frame" x="119.5" y="0.0" width="120" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Songs">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIn-jK-7GT">
+                                                <rect key="frame" x="239.5" y="0.0" width="119.5" height="36"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <state key="normal" title="Top Events">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="2ot-XH-hHj"/>
+                                    <constraint firstItem="35B-bk-ocL" firstAttribute="leading" secondItem="mLX-Xx-Gcq" secondAttribute="leading" constant="8" id="cda-ap-i9D"/>
+                                    <constraint firstItem="35B-bk-ocL" firstAttribute="top" secondItem="mLX-Xx-Gcq" secondAttribute="top" id="fl2-Ro-YdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="35B-bk-ocL" secondAttribute="trailing" constant="8" id="gil-fd-Y27"/>
+                                    <constraint firstAttribute="width" constant="375" id="oCu-Kr-0Yh"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CFa-Kd-sDA">
+                                <rect key="frame" x="0.0" y="194" width="375" height="473"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="81" id="tpW-j2-dqw">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tpW-j2-dqw" id="hHk-Sy-UUO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ocean drive" translatesAutoresizingMaskIntoConstraints="NO" id="YVU-dq-ABv">
+                                                    <rect key="frame" x="8" y="8" width="68" height="68"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="68" id="Y4X-kS-ZTT"/>
+                                                        <constraint firstAttribute="height" constant="68" id="y7R-US-697"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="YVU-dq-ABv" firstAttribute="centerY" secondItem="hHk-Sy-UUO" secondAttribute="centerY" id="JBR-lS-1TE"/>
+                                                <constraint firstItem="YVU-dq-ABv" firstAttribute="leading" secondItem="hHk-Sy-UUO" secondAttribute="leading" id="aeT-Yf-n61"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CFa-Kd-sDA" secondAttribute="bottom" id="8ZD-zp-giF"/>
+                            <constraint firstAttribute="trailing" secondItem="mLX-Xx-Gcq" secondAttribute="trailing" id="BPh-xM-9GK"/>
+                            <constraint firstAttribute="trailing" secondItem="Ebc-DB-eqo" secondAttribute="trailing" id="BbT-E4-WNS"/>
+                            <constraint firstItem="mLX-Xx-Gcq" firstAttribute="top" secondItem="Ebc-DB-eqo" secondAttribute="bottom" id="Fts-0b-1KC"/>
+                            <constraint firstAttribute="trailing" secondItem="mLX-Xx-Gcq" secondAttribute="trailing" id="OdO-Hs-Pbf"/>
+                            <constraint firstItem="mLX-Xx-Gcq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XmZ-qz-oXj"/>
+                            <constraint firstItem="CFa-Kd-sDA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xvn-tB-8an"/>
+                            <constraint firstAttribute="trailing" secondItem="CFa-Kd-sDA" secondAttribute="trailing" id="ZkU-Lo-BM5"/>
+                            <constraint firstItem="Ebc-DB-eqo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-10" id="g7o-XQ-ycK"/>
+                            <constraint firstItem="Ebc-DB-eqo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hC6-Ya-Mo6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Savage Banner" width="500" height="330"/>
+        <image name="ocean drive" width="550" height="367"/>
+    </resources>
 </document>
